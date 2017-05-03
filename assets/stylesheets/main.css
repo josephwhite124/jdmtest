@@ -1,3 +1,8 @@
+
+
+/* Default styles */
+
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -24,27 +29,35 @@ p {
 	font-size: 16px;
 }
 
+h3 {
+	margin-bottom: 1px;
+}
+
+
+/* Header */
+
 header {
 	display: flex;
 	width: 100%;
-	height: 100px;
+	height: 7em;
 	justify-content: center;
+	align-items: center;
 }
 
 .navbar {
+	display: flex;
 	width: 960px;
 	align-items: center;
 }
 
-.logo {
-	text-decoration: none;
+.navbar li:first-child {
+	margin-right: auto;
 }
 
 header ul {
 	display: flex;
 	width: 960px;
 	list-style: none;
-	overflow: auto;
 	justify-content: space-between;
 }
 
@@ -52,6 +65,9 @@ header ul li {
 	display: inline-block;
 	margin: 0 5px;
 }
+
+
+/* First Banner */
 
 .banner {
 	display: flex;
@@ -65,11 +81,50 @@ header ul li {
 	max-height: 600px;
 }
 
+
+/* Intro-text */
+
 .container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	width: 960px;
-	margin: auto;
+	margin: 30px auto;
 }
 
-footer {
+.intro-text {
 	display: flex;
+}
+
+
+/* Second Banner */
+
+.tilegallery {
+	display: flex;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+}
+
+
+/* Footer */
+
+.footer-container {
+	display: flex;
+	background-color: black;
+	height: 20em;
+}
+
+.footer-section {
+	color: white;
+	padding: 0.5em;
+}
+
+.footer-section:nth-child(-n+3) {
+	flex-basis: 30%;
+}
+
+.footer-form {
+	display: flex;
+	flex-direction: column;
 }
